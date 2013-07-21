@@ -9,46 +9,55 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/phone.css" 
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+<link rel=stylesheet href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
   <script data-main="libraries/frameworks/io2012/js/slides" 
     src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
   </script>
   
-    <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
 
 </head>
 <body style="opacity: 0">
   <slides class="layout-widescreen">
     
     <!-- LOGO SLIDE -->
-    <!-- END LOGO SLIDE -->
-    
-
-    <!-- TITLE SLIDE -->
-    <!-- Should I move this to a Local Layout File? -->
+      <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/ropensci_main.png">
+      </span>
+    </article>
+  </slide>
     <slide class="title-slide segue nobackground">
-      <hgroup class="auto-fadein">
-        <h1>Reproducible Research and Collaboration</h1>
-        <h2>Fun with markdown and git</h2>
-        <p>Ted Hart &amp; Scott Chamberlain<br/></p>
-      </hgroup>
-          </slide>
+  <aside class="gdbar">
+    <img src="assets/img/ropensci_small.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Reproducible Research and Collaboration</h1>
+    <h2>Fun with markdown and git</h2>
+    <p>Ted Hart &amp; Scott Chamberlain<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
 
     <!-- SLIDES -->
-      <slide class="" id="slide-1" style="background:;">
+    <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    
+    <h2>Markdown</h2>
   </hgroup>
-  <article>
-    <p><link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"></p>
-
-<h2>Markdown</h2>
-
-<ul>
+  <article data-timings="">
+    <ul class = "build incremental">
 <li>Markdown, MD for short, is a markup language with a few killer attributes 
 
 <ul>
@@ -68,15 +77,15 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-2" style="background:;">
+<slide class="" id="slide-2" style="background:;">
   <hgroup>
     <h2>Markdown use cases</h2>
   </hgroup>
-  <article>
+  <article data-timings="">
     <p>Why would you want to use Markdown?</p>
 
-<ul>
-<li>Just taking notes</li>
+<ul class = "build incremental">
+<li>Taking notes</li>
 <li>Blog posts</li>
 <li>Research paper</li>
 <li>MD is used in many places (StackOverflow, Github, etc.), so good to learn it</li>
@@ -86,67 +95,178 @@
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-3" style="background:;">
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Markdown - your turn</h2>
+    <h2>Markdown - Syntax</h2>
   </hgroup>
-  <article>
-    <p><i class="icon-exclamation-sign"></i> Exercizes!</p>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Headings (#, =, or -)
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<ul>
+<li>Heading 1 (#)</li>
+<li>Heading 3 (###)</li>
+</ul></li>
+<li>Blockquote (&gt;)</li>
+<li>Lists
 
-      <slide class="" id="slide-4" style="background:;">
-  <hgroup>
-    <h2>git</h2>
-  </hgroup>
-  <article>
-    <ul>
-<li>git is a version control system</li>
-<li>git is awesome</li>
+<ul>
+<li>Create list using *, +, or -, or ordered list using 1., 2., etc.</li>
+<li>Nested lists, and more, see the MD site</li>
+</ul></li>
+<li>Code blocks
+
+<ul>
+<li>Indent 1 tab or 4 spaces</li>
+</ul></li>
+<li>Emphasis
+
+<ul>
+<li><strong>Bold</strong> **bold** or __bold__</li>
+<li><em>Italic</em> <em>italic</em> or _italic_</li>
+<li>In the middle of a world: un**believe**able</li>
+</ul></li>
+<li>Links, like this =&gt; <a href=""></a> or [][] with []: url somewhere else</li>
+<li>You can always just write html!</li>
 </ul>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-5" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>git - your turn</h2>
+    <h2>Markdown - your turn</h2>
   </hgroup>
-  <article>
-    
+  <article data-timings="">
+    <p><i class="icon-exclamation-sign"></i> Exercizes!</p>
+
+<ol>
+<li>Write some simple markdown. View it in your favorite MD viewer.</li>
+<li>Write markdown with code blocks that execute code using R. Compile the file and view.</li>
+</ol>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-6" style="background:;">
+<slide class="" id="slide-5" style="background:;">
   <hgroup>
-    
+    <h2>git</h2>
   </hgroup>
-  <article>
-    
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>git is a version control system</li>
+<li>Use cases
+
+<ul>
+<li>Local version control of some files</li>
+<li>Branching to try out completely new things</li>
+<li>Collaboration with others</li>
+<li>Forking!</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>git - your turn</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>If you have git installed, and/or a git GUI:
+
+<ul>
+<li>Create a folder</li>
+<li>Create a document inside that folder with some markdown text</li>
+<li>Commit those changes</li>
+<li>Make some additional changes to your file</li>
+<li>Commit those changes</li>
+<li>Create a branch</li>
+<li>Make a few changes to the file on the new branch</li>
+<li>Merge the new branch into the master branch</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Resources</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>stuff and things</li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
     <slide class="backdrop"></slide>
   </slides>
-
-  <!--[if IE]>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Markdown'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Markdown use cases'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Markdown - Syntax'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Markdown - your turn'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='git'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='git - your turn'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Resources'>
+         7
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
     <script 
       src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
     </script>
     <script>CFInstall.check({mode: 'overlay'});</script>
   <![endif]-->
 </body>
-<!-- Grab CDN jQuery, fall back to local if offline -->
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-<script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery-1.7.min.js"><\/script>')</script>
-<!-- Load Javascripts for Widgets -->
-<!-- LOAD HIGHLIGHTER JS FILES -->
-<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<!-- DONE LOADING HIGHLIGHTER JS FILES -->
-</html>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
