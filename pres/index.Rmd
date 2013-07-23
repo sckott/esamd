@@ -18,8 +18,8 @@ assets      :
 
 > + Markdown, MD for short, is a markup language with a few killer attributes 
   + Super simple to learn (much easier than LaTeX)
-  + Incorporate code blocks
-  + Which allows you to write reproducible documents
+  + Incorporate code blocks <i class="icon-code"></i>
+  + Allows you to write reproducible documents (code + text)
 > + Background
   + Created by [John Gruber](http://daringfireball.net/) (w/ help from [Aaron Swartz](http://www.aaronsw.com/))
   + [The canonical place to learn more](http://daringfireball.net/projects/markdown/)

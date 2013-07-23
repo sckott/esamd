@@ -14,12 +14,11 @@ assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
-
 ## Markdown
 
 > + Markdown, MD for short, is a markup language with a few killer attributes 
   + Super simple to learn (much easier than LaTeX)
-  + Incorporate code blocks
+  + Incorporate code blocks <i class="icon-code"></i>
   + Which allows you to write reproducible documents
 > + Background
   + Created by [John Gruber](http://daringfireball.net/) (w/ help from [Aaron Swartz](http://www.aaronsw.com/))
