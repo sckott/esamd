@@ -13,7 +13,8 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/esamd.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
 <link rel=stylesheet href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"></link>
 
   
@@ -63,7 +64,7 @@
 <ul>
 <li>Super simple to learn (much easier than LaTeX)</li>
 <li>Incorporate code blocks <i class="icon-code"></i></li>
-<li>Which allows you to write reproducible documents</li>
+<li>Allows you to write reproducible documents (code + text)</li>
 </ul></li>
 <li>Background
 
@@ -104,7 +105,6 @@
 <li>Headings (#, =, or -)
 
 <ul>
-<li>Heading 1 (#)</li>
 <li>Heading 3 (###)</li>
 </ul></li>
 <li>Blockquote (&gt;)</li>
@@ -139,7 +139,7 @@
     <h2>Markdown - your turn</h2>
   </hgroup>
   <article data-timings="">
-    <p><i class="icon-exclamation-sign"></i> Exercizes!</p>
+    <p><i class="icon-exclamation-sign"></i> Exercizes</p>
 
 <ol>
 <li>Write some simple markdown. View it in your favorite MD viewer.</li>
@@ -152,6 +152,56 @@
 
 <slide class="" id="slide-5" style="background:;">
   <hgroup>
+    <h2>Markdown - R code blocks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Code blocks can be written and are highlighted, e.g.</p>
+
+<pre><code class="r">foo &lt;- function(){
+  print(&#39;bar&#39;)
+}
+</code></pre>
+
+<p>Put executable code blocks in your markdown</p>
+
+<pre><code class="r">foo &lt;- function() {
+    print(&quot;bar&quot;)
+}
+
+foo()
+</code></pre>
+
+<pre><code>## [1] &quot;bar&quot;
+</code></pre>
+
+<p>Sweet! <i class="icon-thumbs-up-alt"></i></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Markdown - your turn again, with code this time</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><i class="icon-exclamation-sign"></i> Exercizes</p>
+
+<ol>
+<li>Write markdown with code in code blocks without executing the code. View it in your favorite MD viewer.</li>
+<li>Now, put your markdown text w/code blocks in R, and compile document using knitr, like </li>
+</ol>
+
+<pre><code class="r">library(knitr)
+knit(&quot;/path/to/your/file&quot;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
     <h2>git</h2>
   </hgroup>
   <article data-timings="">
@@ -162,8 +212,8 @@
 <ul>
 <li>Local version control of some files</li>
 <li>Branching to try out completely new things</li>
-<li>Collaboration with others</li>
-<li>Forking!</li>
+<li><i class="icon-group"></i> Collaboration with others</li>
+<li><i class="icon-code-fork"></i> Forking! </li>
 </ul></li>
 </ul>
 
@@ -171,23 +221,47 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-6" style="background:;">
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Why git? Who did what?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/contributions.png" alt=""></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Why git? Visualize contributions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/commits.png" alt=""></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
   <hgroup>
     <h2>git - your turn</h2>
   </hgroup>
   <article data-timings="">
     <ul class = "build incremental">
-<li>If you have git installed, and/or a git GUI:
+<li>If you have git installed:
 
 <ul>
-<li>Create a folder</li>
-<li>Create a document inside that folder with some markdown text</li>
-<li>Commit those changes</li>
+<li>Create a folder <code>foo &lt;- bar(the = 5)</code></li>
+<li>Create a document inside that folder with some markdown text <code>touch mydoc.md</code></li>
+<li>Initiate the git repo <code>git init</code></li>
+<li>Tell git to track your file <code>git add .</code> or <code>git add mydoc.md</code></li>
+<li>Commit those changes <code>git commit -a -m &#39;initial commit, added mydoc file&#39;</code></li>
 <li>Make some additional changes to your file</li>
-<li>Commit those changes</li>
-<li>Create a branch</li>
-<li>Make a few changes to the file on the new branch</li>
-<li>Merge the new branch into the master branch</li>
+<li>Commit those changes <code>git commit -a -m &#39;edited mydoc file&#39;</code></li>
+<li>Create a branch <code>git branch newbranch</code> then <code>git checkout newbranch</code></li>
+<li>Make a few changes to the file on the new branch and commit <code>git commit -a -m &#39;...&#39;</code></li>
+<li>Merge the new branch into the master branch <code>git checkout master</code> &amp; <code>git merge newbranch</code></li>
 </ul></li>
 </ul>
 
@@ -195,13 +269,25 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-7" style="background:;">
+<slide class="" id="slide-11" style="background:;">
   <hgroup>
-    <h2>Resources</h2>
+    <h2>Resources for Markdown and git, via FAQ</h2>
   </hgroup>
   <article data-timings="">
     <ul class = "build incremental">
-<li>stuff and things</li>
+<li>Markdown
+
+<ul>
+<li>How do I write Markdown? See <a href="http://daringfireball.net/projects/markdown/">here</a></li>
+<li>How do I ...</li>
+</ul></li>
+<li>git 
+
+<ul>
+<li>How do I use git? See <a href="http://git-scm.com/book">here</a></li>
+<li>But, I want to watch videos! Okay, see <a href="https://www.youtube.com/channel/UCP7RrmoueENv9TZts3HXXtw">here</a></li>
+<li>How do I ...</li>
+</ul></li>
 </ul>
 
   </article>
@@ -238,20 +324,44 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='git'>
+        data-slide=5 title='Markdown - R code blocks'>
          5
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='git - your turn'>
+        data-slide=6 title='Markdown - your turn again, with code this time'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Resources'>
+        data-slide=7 title='git'>
          7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Why git? Who did what?'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Why git? Visualize contributions'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='git - your turn'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Resources for Markdown and git, via FAQ'>
+         11
       </a>
     </li>
   </ul>

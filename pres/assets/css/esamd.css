@@ -1,0 +1,13 @@
+/* line 94, ../scss/default.scss */
+body {
+  background: #fff;
+}
+
+/* line 248, ../scss/default.scss */
+slides.layout-widescreen > slide,
+slides.layout-faux-widescreen > slide {
+  margin-left: -650px;
+  width: 1300px;
+  height: 750px;
+  margin-top: -400px;
+}

@@ -19,7 +19,7 @@ assets      :
 > + Markdown, MD for short, is a markup language with a few killer attributes 
   + Super simple to learn (much easier than LaTeX)
   + Incorporate code blocks <i class="icon-code"></i>
-  + Which allows you to write reproducible documents
+  + Allows you to write reproducible documents (code + text)
 > + Background
   + Created by [John Gruber](http://daringfireball.net/) (w/ help from [Aaron Swartz](http://www.aaronsw.com/))
   + [The canonical place to learn more](http://daringfireball.net/projects/markdown/)
@@ -41,7 +41,6 @@ Why would you want to use Markdown?
 ## Markdown - Syntax
 
 > + Headings (#, =, or -)
-  + Heading 1 (#)
   + Heading 3 (###)
 > + Blockquote (>)
 > + Lists
@@ -60,10 +59,56 @@ Why would you want to use Markdown?
 
 ## Markdown - your turn
 
-<i class="icon-exclamation-sign"></i> Exercizes!
+<i class="icon-exclamation-sign"></i> Exercizes
 
 1. Write some simple markdown. View it in your favorite MD viewer.
 2. Write markdown with code blocks that execute code using R. Compile the file and view.
+
+---
+
+## Markdown - R code blocks
+
+Code blocks can be written and are highlighted, e.g.
+
+```r
+foo <- function(){
+  print('bar')
+}
+```
+
+Put executable code blocks in your markdown
+
+
+```r
+foo <- function() {
+    print("bar")
+}
+
+foo()
+```
+
+```
+## [1] "bar"
+```
+
+
+Sweet! <i class="icon-thumbs-up-alt"></i>
+
+---
+
+## Markdown - your turn again, with code this time
+
+<i class="icon-exclamation-sign"></i> Exercizes
+
+1. Write markdown with code in code blocks without executing the code. View it in your favorite MD viewer.
+2. Now, put your markdown text w/code blocks in R, and compile document using knitr, like 
+
+
+```r
+library(knitr)
+knit("/path/to/your/file")
+```
+
 
 ---
 
@@ -73,26 +118,46 @@ Why would you want to use Markdown?
 > + Use cases
   + Local version control of some files
   + Branching to try out completely new things
-  + Collaboration with others
-  + Forking!
+  + <i class="icon-group"></i> Collaboration with others
+  + <i class="icon-code-fork"></i> Forking! 
 
+
+---
+
+## Why git? Who did what?
+
+![](assets/img/contributions.png)
+
+---
+
+## Why git? Visualize contributions
+
+![](assets/img/commits.png)
 
 ---
 
 ## git - your turn
 
-> + If you have git installed, and/or a git GUI:
-  + Create a folder
-  + Create a document inside that folder with some markdown text
-  + Commit those changes
+> + If you have git installed:
+  + Create a folder `foo <- bar(the = 5)`
+  + Create a document inside that folder with some markdown text `touch mydoc.md`
+  + Initiate the git repo `git init`
+  + Tell git to track your file `git add .` or `git add mydoc.md`
+  + Commit those changes `git commit -a -m 'initial commit, added mydoc file'`
   + Make some additional changes to your file
-  + Commit those changes
-  + Create a branch
-  + Make a few changes to the file on the new branch
-  + Merge the new branch into the master branch
+  + Commit those changes `git commit -a -m 'edited mydoc file'`
+  + Create a branch `git branch newbranch` then `git checkout newbranch`
+  + Make a few changes to the file on the new branch and commit `git commit -a -m '...'`
+  + Merge the new branch into the master branch `git checkout master` & `git merge newbranch`
 
 ---
 
-## Resources
+## Resources for Markdown and git, via FAQ
 
-> + stuff and things
+> + Markdown
+  + How do I write Markdown? See [here](http://daringfireball.net/projects/markdown/)
+  + How do I ...
+> + git 
+  + How do I use git? See [here](http://git-scm.com/book)
+  + But, I want to watch videos! Okay, see [here](https://www.youtube.com/channel/UCP7RrmoueENv9TZts3HXXtw)
+  + How do I ...

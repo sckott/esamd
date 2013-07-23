@@ -29,6 +29,10 @@ Workshop description from the [ESA website](http://eco.confex.com/eco/2013/webpr
 **What to do/bring before the workshop**
 
 + Bring your own laptop
++ Download a markdown viewer, suggestions for each OS:
+	+ Mac: [Marked](http://markedapp.com/)
+	+ Windows: [MarkPad](http://code52.org/DownmarkerWPF/)
+	+ Linux: [ReText](http://sourceforge.net/p/retext/home/ReText/)
 + 
 
 **Instructors**
