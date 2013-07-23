@@ -14,7 +14,6 @@ assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
-
 ## Markdown
 
 > + Markdown, MD for short, is a markup language with a few killer attributes 
