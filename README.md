@@ -22,18 +22,24 @@ Workshop description from the [ESA website](http://eco.confex.com/eco/2013/webpr
 	+ Syntax
 	+ Use cases
 	+ Practice
++ knitr
+  + How to write reproducible documents
+  + Demonstrate how to make nice PDF's
 + Git
-	+ Intro to version control, and justification
-	+ Very brief intro to using git to version control your markdown files
+  + Demonstration of using git to version control your markdown files
 
 **What to do/bring before the workshop**
 
 + Bring your own laptop
-+ Download a markdown viewer, suggestions for each OS:
-	+ Mac: [Marked](http://markedapp.com/)
-	+ Windows: [MarkPad](http://code52.org/DownmarkerWPF/)
-	+ Linux: [ReText](http://sourceforge.net/p/retext/home/ReText/)
-+ 
++ Install [RStudio](http://www.rstudio.com/ide/download/desktop)
++ Install the following libraries in your R installation:
+  + [knitr](http://yihui.name/knitr/)
+  + [knitcitations](https://github.com/cboettig/knitcitations)
+  
+
+**Optional installation**
++ [Pandoc](http://johnmacfarlane.net/pandoc/installing.html) and the necessary libraries for PDF conversion 
++ [git](http://git-scm.com/)
 
 **Instructors**
 

@@ -9,21 +9,23 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
 assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
-## Markdown
+## What you'll learn
 
-> + Markdown, MD for short, is a markup language with a few killer attributes 
-  + Super simple to learn (much easier than LaTeX)
-  + Incorporate code blocks <i class="icon-code"></i>
-  + Allows you to write reproducible documents (code + text)
-> + Background
-  + Created by [John Gruber](http://daringfireball.net/) (w/ help from [Aaron Swartz](http://www.aaronsw.com/))
-  + [The canonical place to learn more](http://daringfireball.net/projects/markdown/)
+> + Markdown 
+  + A language for text to html conversion with simple formatting tags that leave you with readable text.
+  + Super simple to learn
+  + Widely supported (GitHub, pandoc, static webpages, etc..)
+> + knitr
+  + a simple way to write reproducible documents including R code blocks and formatted text
 
+### What we'll demonstrate
+> + git
+  + A version control system that allows for collaboration on text documents
+  
 
 ---
 
@@ -61,20 +63,32 @@ Why would you want to use Markdown?
 
 <i class="icon-exclamation-sign"></i> Exercizes
 
-1. Write some simple markdown. View it in your favorite MD viewer.
-2. Write markdown with code blocks that execute code using R. Compile the file and view.
+Create something in MD and view it.  Try and hit as many stylistic elements as possible.  If you're uninspired copy this.
 
 ---
 
-## Markdown - R code blocks
+## Markdown
+### Reasons Scott loves MD
 
-Code blocks can be written and are highlighted, e.g.
+Lists of course! _Ordered_ 
+    	
+1. I am a destroyer
+2. of entropy!
 
-```r
-foo <- function(){
-  print('bar')
-}
-```
+and **Un...**
+* I am a child of CHAOS
+* `in code blocks`
+
+Easy code for links to [awesome webpages](http://schamberlain.github.io), Oh and images anyone?!
+
+![Beautyandthebeast](http://nature.berkeley.edu/~karthik/wp-content/uploads/2011/05/karthik.png "its karthik")
+
+
+
+
+---
+
+## knitr - R code blocks in Markdown
 
 Put executable code blocks in your markdown
 
@@ -89,29 +103,23 @@ foo()
 Sweet! <i class="icon-thumbs-up-alt"></i>
 
 ---
+## Anatomy of a code chunk
 
+<center>![knitslide](assets/img/codeChunk.png)</center>
+
+---
 ## Markdown - your turn again, with code this time
 
-<i class="icon-exclamation-sign"></i> Exercizes
+<i class="icon-exclamation-sign"></i> Exercise
 
-1. Write markdown with code in code blocks without executing the code. View it in your favorite MD viewer.
+1. Write markdown with code in code blocks without executing the code. 
+
 2. Now, put your markdown text w/code blocks in R, and compile document using knitr, like 
 
 ```{r, eval=FALSE}
 library(knitr)
 knit("/path/to/your/file")
 ```
-
----
-
-## git
-
-> + git is a version control system
-> + Use cases
-  + Local version control of some files
-  + Branching to try out completely new things
-  + <i class="icon-group"></i> Collaboration with others
-  + <i class="icon-code-fork"></i> Forking! 
 
 
 ---
