@@ -10,7 +10,6 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
 assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
@@ -179,8 +178,16 @@ Sweet! <i class="icon-thumbs-up-alt"></i>
 ---
 
 ## Anatomy of a code chunk
-
+<br>
+<br>
 <center>![knitslide](assets/img/codeChunk.png)</center>
+<br>
+Three basic components of a knitr document
+1. Markdown formatted text
+
+2. Code chunk designation and options
+
+3. Code to execute
 
 ---
 
@@ -200,7 +207,33 @@ knit("/path/to/your/file")
 
 
 ---
+## Working with code chunk options
 
+Some options
+
++ `eval`: T or F
+  + Evaluate a chunk or just print it
++ `fig.width`, `fig.height`: numeric
+  + Width and height of the plot in inches
++ `message`, `warning`, `error`: T or F
+  + Whether or not to display messages, warnings or errors
+
+RStudio has a helpful autocomplete for code chunk options
+
+Here's a [full list of options](http://yihui.name/knitr/options)
+
+
+---
+
+## <i class="icon-keyboard"></i> Markdown exercizes - With code and options
+
+<br><br><br><br>
+
+1. Take your previous example and add some code chunk options.
+
+2. Compile document using knitr
+
+---
 ## Convert knitr documents to other formats
 
 <!-- Will go through examples of some of these on the CLI, etc. -->
