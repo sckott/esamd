@@ -246,7 +246,7 @@ knit2html("knitr_eg.Rmd")
 
 ```bash
 pandoc -o knitr_eg.pdf knitr_eg.md
-pandoc V geometry:margin=1in -o knitr_eg.pdf knitr_eg.md
+pandoc -V geometry:margin=1in -o knitr_eg.pdf knitr_eg.md
 ```
 
 + LaTeX - Requires a bit of text for proper latex doc
@@ -269,8 +269,8 @@ Karthik - Do the live demo of working with git here?
 
 + How do I write MD? See [here](http://daringfireball.net/projects/markdown/)
 + Has anyone used MD to write a paper? Yep, see these
-  + [Ethan White et al.](https://github.com/weecology/data-sharing-paper/blob/master/data_sharing_ms.md)
-  + [Ethan White et al.](https://github.com/weecology/data-sharing-paper/blob/master/data_sharing_ms.md)
+  + [Ethan White et al. 2013](https://github.com/weecology/data-sharing-paper/blob/master/data_sharing_ms.md)
+  + [Ram 2013](https://github.com/karthikram/smb_git/)
 + Will MD gain more features? Yep, see [here](https://github.com/scholmd/scholmd)
 + Where else can I write MD?
   + [DraftIn](https://draftin.com/) - collaborative writing on the web in MD
