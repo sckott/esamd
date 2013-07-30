@@ -3,11 +3,34 @@ body {
   background: #fff;
 }
 
+.centered {
+  text-align: left;
+}
+
+table {
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 24px;
+  line-height: 47px;
+  font-family: 'Trebuchet MS';
+  font-weight: bolder;
+  color: rgb(102, 102, 102);
+}
+
 /* line 248, ../scss/default.scss */
 slides.layout-widescreen > slide,
 slides.layout-faux-widescreen > slide {
   margin-left: -650px;
   width: 1300px;
   height: 750px;
-  margin-top: -400px;
+  margin-top: -375px;
 }
+
+article li {
+  font-size: 26px;	
+}
+
+slides > slide.backdrop{
+	background: white;
+};

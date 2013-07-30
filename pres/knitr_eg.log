@@ -1,0 +1,151 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdfetex 2013.5.23)  29 JUL 2013 17:50
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\nonstopmode \input /Users/scottmac2/github/sac/esamd/pres/knitr_eg.md
+(/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md
+Overfull \hbox (9.13525pt too wide) in paragraph at lines 1--3
+[]\tenrm Title ======================================================== |
+
+\hbox(6.94444+0.0)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm T
+.\tenrm i
+.\tenrm t
+.\tenrm l
+.etc.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:14: You can't use `macro par
+ameter character #' in horizontal mode.
+l.14 #
+      #      speed           dist
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:14: You can't use `macro par
+ameter character #' in horizontal mode.
+l.14 ##
+             speed           dist
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:15: You can't use `macro par
+ameter character #' in horizontal mode.
+l.15 #
+      #  Min.   : 4.0   Min.   :  2
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:15: You can't use `macro par
+ameter character #' in horizontal mode.
+l.15 ##
+         Min.   : 4.0   Min.   :  2
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:16: You can't use `macro par
+ameter character #' in horizontal mode.
+l.16 #
+      #  1st Qu.:12.0   1st Qu.: 26
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:16: You can't use `macro par
+ameter character #' in horizontal mode.
+l.16 ##
+         1st Qu.:12.0   1st Qu.: 26
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:17: You can't use `macro par
+ameter character #' in horizontal mode.
+l.17 #
+      #  Median :15.0   Median : 36
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:17: You can't use `macro par
+ameter character #' in horizontal mode.
+l.17 ##
+         Median :15.0   Median : 36
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:18: You can't use `macro par
+ameter character #' in horizontal mode.
+l.18 #
+      #  Mean   :15.4   Mean   : 43
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:18: You can't use `macro par
+ameter character #' in horizontal mode.
+l.18 ##
+         Mean   :15.4   Mean   : 43
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:19: You can't use `macro par
+ameter character #' in horizontal mode.
+l.19 #
+      #  3rd Qu.:19.0   3rd Qu.: 56
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:19: You can't use `macro par
+ameter character #' in horizontal mode.
+l.19 ##
+         3rd Qu.:19.0   3rd Qu.: 56
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:20: You can't use `macro par
+ameter character #' in horizontal mode.
+l.20 #
+      #  Max.   :25.0   Max.   :120
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/scottmac2/github/sac/esamd/pres/knitr_eg.md:20: You can't use `macro par
+ameter character #' in horizontal mode.
+l.20 ##
+         Max.   :25.0   Max.   :120
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+)
+! Emergency stop.
+<*> ...scottmac2/github/sac/esamd/pres/knitr_eg.md
+                                                  
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!
