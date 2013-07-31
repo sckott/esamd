@@ -184,6 +184,7 @@ Sweet! <i class="icon-thumbs-up-alt"></i>
 <center>![knitslide](assets/img/codeChunk.png)</center>
 <br>
 Three basic components of a knitr document
+
 1. Markdown formatted text
 
 2. Code chunk designation and options
@@ -299,4 +300,8 @@ Karthik - Do the live demo of working with git here?
 
 ---
 
-<center>![](assets/img/ropensci_main.png)</center>
+## rOpenSci Drinkup
+
+###  Location: Brit's Pub, 3rd floor Verandah bar. 6:30 pm.
+
+<center>![](assets/img/drinkup.png)</center>
