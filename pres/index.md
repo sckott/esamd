@@ -10,6 +10,7 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
 assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
@@ -222,7 +223,6 @@ RStudio has a helpful autocomplete for code chunk options
 
 Here's a [full list of options](http://yihui.name/knitr/options)
 
-
 ---
 
 ## <i class="icon-keyboard"></i> Markdown exercizes - With code and options
@@ -258,7 +258,7 @@ knit2html("knitr_eg.Rmd")
 
 ```bash
 pandoc -o knitr_eg.pdf knitr_eg.md
-pandoc V geometry:margin=1in -o knitr_eg.pdf knitr_eg.md
+pandoc -V geometry:margin=1in -o knitr_eg.pdf knitr_eg.md
 ```
 
 + LaTeX - Requires a bit of text for proper latex doc
@@ -281,8 +281,8 @@ Karthik - Do the live demo of working with git here?
 
 + How do I write MD? See [here](http://daringfireball.net/projects/markdown/)
 + Has anyone used MD to write a paper? Yep, see these
-  + [Ethan White et al.](https://github.com/weecology/data-sharing-paper/blob/master/data_sharing_ms.md)
-  + [Ethan White et al.](https://github.com/weecology/data-sharing-paper/blob/master/data_sharing_ms.md)
+  + [Ethan White et al. 2013](https://github.com/weecology/data-sharing-paper/blob/master/data_sharing_ms.md)
+  + [Ram 2013](https://github.com/karthikram/smb_git/)
 + Will MD gain more features? Yep, see [here](https://github.com/scholmd/scholmd)
 + Where else can I write MD?
   + [DraftIn](https://draftin.com/) - collaborative writing on the web in MD

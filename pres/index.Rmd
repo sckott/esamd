@@ -10,9 +10,9 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-assets      :
 mode        : selfcontained # {standalone, draft}
-css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+assets      :
+  css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
 ## What you'll learn
