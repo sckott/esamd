@@ -34,7 +34,7 @@ Workshop description from the [ESA website](http://eco.confex.com/eco/2013/webpr
 + Install [RStudio](http://www.rstudio.com/ide/download/desktop)
 + Install the following libraries in your R installation:
   + [knitr](http://yihui.name/knitr/)
-  + [knitcitations](https://github.com/cboettig/knitcitations)
+
   
 
 **Optional installation**
@@ -43,5 +43,9 @@ Workshop description from the [ESA website](http://eco.confex.com/eco/2013/webpr
 
 **Instructors**
 
-+ [Ted Hart (@distribecology)](https://twitter.com/distribecology)
 + [Scott Chamberlain (@recology_)](https://twitter.com/recology_)
+
+**Contributors**
+
++ [Ted Hart (@distribecology)](https://twitter.com/distribecology)
++ [Karthik Ram (@_inundata)](https://twitter.com/_inundata)

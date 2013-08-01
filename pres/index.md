@@ -14,6 +14,14 @@ mode        : selfcontained # {standalone, draft}
 assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
+<style>
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
+</style>
 
 ## What you'll learn
 
@@ -233,6 +241,33 @@ Here's a [full list of options](http://yihui.name/knitr/options)
 1. Take your previous example and add some code chunk options.
 
 2. Compile document using knitr
+
+
+--- 
+
+## Citations
+<!-- Not sure if this should go before or after the next slide -->
+
+### BibTex file with keys, e.g.:
+@article{jones2006,
+  title={The new bioinformatics: integrating ecological data from the gene to the biosphere},<br>
+author={Jones, Matthew B and Schildhauer, Mark P and Reichman, OJ and Bowers, Shawn},<br>
+journal={Annual Review of Ecology, Evolution, and Systematics}
+<br>
+### How it appears
+
+**In Markdown**
+
+"because they do not follow best practices in terms of data structure, metadata, and licensing [@jones2006]."
+
+**Rendered as PDF**
+
+"because they do not follow best practices in terms of
+32 data structure, metadata, and licensing (Jones et al. 2006)."
+
+**Citation**
+
+Jones, M. B., M. P. Schildhauer, O. J. Reichman, and S. Bowers. 2006. The new bioinformatics:integrating ecological data from the gene to the biosphere. Annual Review of Ecology, Evolution,and Systematics:519–544.
 
 ---
 ## Convert knitr documents to other formats
