@@ -14,14 +14,6 @@ mode        : selfcontained # {standalone, draft}
 assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
-<style>
-em {
-  font-style: italic
-}
-strong {
-  font-weight: bold;
-}
-</style>
 
 ## What you'll learn
 
@@ -340,3 +332,5 @@ Karthik - Do the live demo of working with git here?
 ###  Location: Brit's Pub, 3rd floor Verandah bar. 6:30 pm.
 
 <center>![](assets/img/drinkup.png)</center>
+
+Generously supported by <icon class="icon-github"></i> [GitHub](https://github.com/)

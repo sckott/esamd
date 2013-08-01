@@ -3,6 +3,13 @@ body {
   background: #fff;
 }
 
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
+
 .centered {
   text-align: left;
 }
