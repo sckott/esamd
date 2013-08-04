@@ -4,7 +4,7 @@
   <title>Reproducible Research and Collaboration</title>
   <meta charset="utf-8">
   <meta name="description" content="Reproducible Research and Collaboration">
-  <meta name="author" content="Scott Chamberlain &amp; Karthik Ram">
+  <meta name="author" content="Scott Chamberlain &amp; Karthik Ram (w/help from Ted Hart)">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/esamd.css"></link>
 <link rel=stylesheet href="./assets/css/ribbons.css"></link>
-<link rel=stylesheet href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"></link>
+<link rel=stylesheet href="assets/FontAwesome/css/font-awesome.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
@@ -46,7 +46,7 @@
   <hgroup class="auto-fadein">
     <h1>Reproducible Research and Collaboration</h1>
     <h2>Markdown and knitr</h2>
-    <p>Scott Chamberlain &amp; Karthik Ram<br/></p>
+    <p>Scott Chamberlain &amp; Karthik Ram (w/help from Ted Hart)<br/></p>
   </hgroup>
   <article></article>  
 </slide>
@@ -80,7 +80,7 @@
   </hgroup>
   <article data-timings="">
     <blockquote>
-<h3>Markdown is a text-to-HTML conversion tool for <del>web writers</del>. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to <del>structurally valid XHTML (or HTML)</del> other file formats.</h3>
+<h3>Markdown is a text-to-HTML conversion tool <del>for web writers</del>. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to <del>structurally valid XHTML (or HTML)</del> other file formats.</h3>
 </blockquote>
 
 <p><br><br><br></p>
@@ -141,11 +141,11 @@
 </tr>
 <tr>
 <td>easy</td>
-<td align="center">hard</td>
+<td align="center">okay, also easy</td>
 </tr>
 <tr>
 <td>free</td>
-<td align="center">nope</td>
+<td align="center">h*%ll no</td>
 </tr>
 </tbody></table>
 
@@ -174,11 +174,6 @@
 <li>Ordered list using 1., 2., etc.</li>
 <li>Nested lists, and more, see the MD site</li>
 </ul></li>
-<li>Code blocks
-
-<ul>
-<li>Indent 1 tab or 4 spaces</li>
-</ul></li>
 </ul>
 
 </div>
@@ -196,17 +191,6 @@
 <ul>
 <li>e.g., <a href="http://ropensci.org/">here is a link</a></li>
 </ul></li>
-<li>You can always just write html! Here&#39;s an html table
-<table>
-  <tr>
-      <td>Foo</td>
-      <td>Bar</td>
-  </tr>
-  <tr>
-      <td>5</td>
-      <td>6</td>
-  </tr>
-</table></li>
 </ul>
 
 </div>
@@ -216,17 +200,30 @@
 
 <slide class="" id="slide-6" style="background:;">
   <article data-timings="">
-    <!-- 
+    <!-- Scott do live typing of MD w/ probably Marked app showing how the MD gets rendered live.
+see file scott_demo.md -->
 
-Karthik - - Here, I can do a bit of live typing of MD w/ probably Marked app showing how the MD gets rendered live. Then let them jump in to trying it
+<p><br><br><br><br>
+<center> </p>
 
--->
+<h2><i class="icon-pencil"></i> Live demo</h2>
 
-<h2><i class="icon-keyboard"></i> Markdown exercizes - your turn</h2>
+<p></center> </p>
 
-<p><br><br><br><br></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2><i class="icon-keyboard"></i> Markdown exercizes - your turn</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br><br><br><br></p>
 
 <h3>Create something in MD and view it.</h3>
+
+<p><br><br></p>
 
 <h3>Try and hit as many stylistic elements as possible.</h3>
 
@@ -234,7 +231,7 @@ Karthik - - Here, I can do a bit of live typing of MD w/ probably Marked app sho
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-7" style="background:;">
+<slide class="" id="slide-8" style="background:;">
   <hgroup>
     <h2>More Markdown</h2>
   </hgroup>
@@ -255,10 +252,10 @@ Karthik - - Here, I can do a bit of live typing of MD w/ probably Marked app sho
 
 <h3>Code blocks</h3>
 
-<!-- Karthik - know how to escape code blocks? -->
-
-<pre><code class="r">print(&quot;foo&quot;)
-</code></pre>
+<ul>
+<li>Indent 1 tab or 4 spaces</li>
+<li>Or wrap block like in three backticks ```</li>
+</ul>
 
 </div>
 <div style='float:right;width:48%;'>
@@ -295,7 +292,60 @@ Content Cell  | Content Cell
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-8" style="background:;">
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>You can always just write html! Here&#39;s an html table</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <pre><code class="bash eval=FALSE">  &lt;table&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Foo&lt;/td&gt;
+          &lt;td&gt;Bar&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;6&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;9&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><table>
+      <tr>
+          <td>Foo</td>
+          <td>Bar</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>9</td>
+      </tr>
+  </table></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
   <hgroup>
     <h2>knitr - R code blocks in Markdown</h2>
   </hgroup>
@@ -318,7 +368,7 @@ foo()
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-9" style="background:;">
+<slide class="" id="slide-11" style="background:;">
   <hgroup>
     <h2>Anatomy of a code chunk</h2>
   </hgroup>
@@ -339,7 +389,7 @@ Three basic components of a knitr document</p>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-10" style="background:;">
+<slide class="" id="slide-12" style="background:;">
   <hgroup>
     <h2><i class="icon-keyboard"></i> Markdown exercizes - your turn again, with code this time</h2>
   </hgroup>
@@ -347,19 +397,21 @@ Three basic components of a knitr document</p>
     <p><br><br><br><br></p>
 
 <ol>
-<li><p>Write markdown with code in code blocks without executing the code. </p></li>
-<li><p>Then, put your markdown text w/code blocks in R, and compile document using knitr, like </p></li>
+<li><p>Write markdown with code in code blocks without executing the code in a <strong>.md</strong> file. </p></li>
+<li><p>Then, put your markdown text w/code blocks in R in a <strong>.Rmd</strong> file, and compile document using knitr, like </p></li>
 </ol>
 
 <pre><code class="r">library(knitr)
 knit(&quot;/path/to/your/file&quot;)
 </code></pre>
 
+<p>or just press <strong>Knit HTML</strong> button above your file</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-11" style="background:;">
+<slide class="" id="slide-13" style="background:;">
   <hgroup>
     <h2>Working with code chunk options</h2>
   </hgroup>
@@ -392,7 +444,7 @@ knit(&quot;/path/to/your/file&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-12" style="background:;">
+<slide class="" id="slide-14" style="background:;">
   <hgroup>
     <h2><i class="icon-keyboard"></i> Markdown exercizes - With code and options</h2>
   </hgroup>
@@ -401,14 +453,14 @@ knit(&quot;/path/to/your/file&quot;)
 
 <ol>
 <li><p>Take your previous example and add some code chunk options.</p></li>
-<li><p>Compile document using knitr</p></li>
+<li><p>Compile document using knitr.</p></li>
 </ol>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-13" style="background:;">
+<slide class="" id="slide-15" style="background:;">
   <hgroup>
     <h2>Citations</h2>
   </hgroup>
@@ -442,7 +494,7 @@ journal={Annual Review of Ecology, Evolution, and Systematics}
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-14" style="background:;">
+<slide class="" id="slide-16" style="background:;">
   <hgroup>
     <h2>Convert knitr documents to other formats</h2>
   </hgroup>
@@ -482,7 +534,7 @@ pandoc -V geometry:margin=1in -o knitr_eg.pdf knitr_eg.md
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-15" style="background:;">
+<slide class="" id="slide-17" style="background:;">
   <article data-timings="">
     <!-- 
 
@@ -494,12 +546,13 @@ Karthik - Do the live demo of working with git here?
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-16" style="background:;">
-  <hgroup>
-    <h2>Resources for Markdown</h2>
-  </hgroup>
+<slide class="" id="slide-18" style="background:;">
   <article data-timings="">
-    <ul>
+    
+<div style='float:left;width:48%;' class='centered'>
+  <h2>markdown resources</h2>
+
+<ul>
 <li>How do I write MD? See <a href="http://daringfireball.net/projects/markdown/">here</a></li>
 <li>Has anyone used MD to write a paper? Yep, see these
 
@@ -517,26 +570,43 @@ Karthik - Do the live demo of working with git here?
 <li>pandoc <a href="http://johnmacfarlane.net/pandoc/">get it here</a></li>
 </ul>
 
+</div>
+<div style='float:right;width:48%;'>
+  <h2>knitr resources</h2>
+
+<ul>
+<li>How do I use knitr? See <a href="http://yihui.name/knitr/">here</a></li>
+<li>Can I just see some minimal examples? See <a href="http://yihui.name/knitr/demo/minimal/">here</a></li>
+<li>But I want to see a video. See <a href="http://yihui.name/knitr/">here</a></li>
+</ul>
+
+<h2>git resources</h2>
+
+<ul>
+<li>How do I use git? See <a href="http://git-scm.com/book">here</a></li>
+<li>But, I want to watch videos! Okay, see <a href="https://www.youtube.com/channel/UCP7RrmoueENv9TZts3HXXtw">here</a> </li>
+</ul>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-17" style="background:;">
+<slide class="" id="slide-19" style="background:;">
   <hgroup>
-    <h2>Resources for knitr</h2>
+    <h2>Cred</h2>
   </hgroup>
   <article data-timings="">
     <ul>
-<li>How do I use knitr? See <a href="http://yihui.name/knitr/">here</a></li>
-<li>Can I just see some minimal examples? See <a href="http://yihui.name/knitr/demo/minimal/">here</a></li>
-<li>But I want to see a video? See <a href="http://yihui.name/knitr/">here</a></li>
+<li>Slides made with <a href="http://slidify.org/">Slidify</a>, written in Markdown!</li>
+<li>Icons by <a href="http://fortawesome.github.io/Font-Awesome">FontAwesome</a></li>
 </ul>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-18" style="background:;">
+<slide class="" id="slide-20" style="background:;">
   <hgroup>
     <h2>rOpenSci Drinkup</h2>
   </hgroup>
@@ -593,74 +663,86 @@ Karthik - Do the live demo of working with git here?
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='More Markdown'>
+        data-slide=7 title='<i class="icon-keyboard"></i> Markdown exercizes - your turn'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='knitr - R code blocks in Markdown'>
+        data-slide=8 title='More Markdown'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Anatomy of a code chunk'>
+        data-slide=9 title='You can always just write html! Here&#39;s an html table'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='<i class="icon-keyboard"></i> Markdown exercizes - your turn again, with code this time'>
+        data-slide=10 title='knitr - R code blocks in Markdown'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='Working with code chunk options'>
+        data-slide=11 title='Anatomy of a code chunk'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='<i class="icon-keyboard"></i> Markdown exercizes - With code and options'>
+        data-slide=12 title='<i class="icon-keyboard"></i> Markdown exercizes - your turn again, with code this time'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Citations'>
+        data-slide=13 title='Working with code chunk options'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Convert knitr documents to other formats'>
+        data-slide=14 title='<i class="icon-keyboard"></i> Markdown exercizes - With code and options'>
          14
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title=''>
+        data-slide=15 title='Citations'>
          15
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title='Resources for Markdown'>
+        data-slide=16 title='Convert knitr documents to other formats'>
          16
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=17 title='Resources for knitr'>
+        data-slide=17 title=''>
          17
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='rOpenSci Drinkup'>
+        data-slide=18 title=''>
          18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Cred'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='rOpenSci Drinkup'>
+         20
       </a>
     </li>
   </ul>

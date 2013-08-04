@@ -1,7 +1,7 @@
 ---
 title       : Reproducible Research and Collaboration
 subtitle    : Markdown and knitr
-author      : Scott Chamberlain & Karthik Ram
+author      : Scott Chamberlain & Karthik Ram (w/help from Ted Hart)
 date        : 2013-08-05
 job         : 
 logo        : "ropensci_small.png"
@@ -12,7 +12,7 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 assets      :
-  css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+  css: "assets/FontAwesome/css/font-awesome.css"
 ---
 
 ## What you'll learn
@@ -27,7 +27,7 @@ assets      :
 
 ## What is Markdown?
 
-> ### Markdown is a text-to-HTML conversion tool for ~~web writers~~. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to ~~structurally valid XHTML (or HTML)~~ other file formats.
+> ### Markdown is a text-to-HTML conversion tool ~~for web writers~~. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to ~~structurally valid XHTML (or HTML)~~ other file formats.
 
 <br><br><br>
 
@@ -51,10 +51,10 @@ from [the Markdown site](http://daringfireball.net/projects/markdown/)
 | Super simple to learn - The syntax is dead simple      | Simple, okay, i'll give you that |
 | Widely supported on the web (StackOverflow, GitHub, pandoc, static webpages, etc..)      | Not supported on the web      |
 | Versioning? Can at least partly due as it's plain text | Can't version binary files  |
-| Open in your favorite editor? heck yes | Sorry, only Word and OpenOffice |
+| Open in your favorite editor? heck yes | Sorry, only Word and OpenOffice (sorta works) |
 | Execute code inside the document? Yep! |  Sorry, what does that mean? |
-| easy | hard |
-| free | nope |
+| easy | okay, also easy |
+| free | h*%ll no |
 
 --- &twocol
 
@@ -69,8 +69,6 @@ from [the Markdown site](http://daringfireball.net/projects/markdown/)
   + Create list using *, +, or -
   + Ordered list using 1., 2., etc.
   + Nested lists, and more, see the MD site
-> + Code blocks
-  + Indent 1 tab or 4 spaces
   
 *** =right
 
@@ -80,32 +78,25 @@ from [the Markdown site](http://daringfireball.net/projects/markdown/)
   + In the middle of a world: un\*\*believe\*\*able
 > + Links, like this => []() or [][] with []: url somewhere else
   + e.g., [here is a link](http://ropensci.org/)
-> + You can always just write html! Here's an html table
-  <table>
-      <tr>
-          <td>Foo</td>
-          <td>Bar</td>
-      </tr>
-      <tr>
-          <td>5</td>
-          <td>6</td>
-      </tr>
-  </table>
 
 ---
 
-<!-- 
+<!-- Scott do live typing of MD w/ probably Marked app showing how the MD gets rendered live.
+see file scott_demo.md -->
 
-Karthik - - Here, I can do a bit of live typing of MD w/ probably Marked app showing how the MD gets rendered live. Then let them jump in to trying it
+<br><br><br><br>
+<center> 
+## <i class="icon-pencil"></i> Live demo 
+</center> 
 
--->
-
+---
 
 ## <i class="icon-keyboard"></i> Markdown exercizes - your turn
 
 <br><br><br><br>
 
 ### Create something in MD and view it.  
+<br><br>
 ### Try and hit as many stylistic elements as possible.
 
 --- &twocol
@@ -128,11 +119,8 @@ I counted `r 1 + 1` red trucks on the highway.
 
 ### Code blocks
 
-<!-- Karthik - know how to escape code blocks? -->
-
-```r
-print("foo")
-```
++ Indent 1 tab or 4 spaces
++ Or wrap block like in three backticks ```
 
 *** =right
 
@@ -153,6 +141,54 @@ First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
+
+--- &twocol
+
+## You can always just write html! Here's an html table
+
+***=left
+
+```{bash eval=FALSE}
+  <table>
+      <tr>
+          <td>Foo</td>
+          <td>Bar</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>9</td>
+      </tr>
+  </table>
+```
+  
+***=right
+
+  <table>
+      <tr>
+          <td>Foo</td>
+          <td>Bar</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>9</td>
+      </tr>
+  </table>
 
 ---
 
@@ -191,14 +227,16 @@ Three basic components of a knitr document
 
 <br><br><br><br>
 
-1. Write markdown with code in code blocks without executing the code. 
+1. Write markdown with code in code blocks without executing the code in a **.md** file. 
 
-2. Then, put your markdown text w/code blocks in R, and compile document using knitr, like 
+2. Then, put your markdown text w/code blocks in R in a **.Rmd** file, and compile document using knitr, like 
 
 ```{r, eval=FALSE}
 library(knitr)
 knit("/path/to/your/file")
 ```
+
+or just press **Knit HTML** button above your file
 
 ---
 ## Working with code chunk options
@@ -224,7 +262,7 @@ Here's a [full list of options](http://yihui.name/knitr/options)
 
 1. Take your previous example and add some code chunk options.
 
-2. Compile document using knitr
+2. Compile document using knitr.
 
 
 --- 
@@ -254,6 +292,7 @@ journal={Annual Review of Ecology, Evolution, and Systematics}
 Jones, M. B., M. P. Schildhauer, O. J. Reichman, and S. Bowers. 2006. The new bioinformatics:integrating ecological data from the gene to the biosphere. Annual Review of Ecology, Evolution,and Systematics:519–544.
 
 ---
+
 ## Convert knitr documents to other formats
 
 <!-- Will go through examples of some of these on the CLI, etc. -->
@@ -291,9 +330,11 @@ Karthik - Do the live demo of working with git here?
 
 -->
 
----
+--- &twocol
 
-## Resources for Markdown
+***=left
+
+## markdown resources
 
 + How do I write MD? See [here](http://daringfireball.net/projects/markdown/)
 + Has anyone used MD to write a paper? Yep, see these
@@ -305,13 +346,25 @@ Karthik - Do the live demo of working with git here?
 + [MD cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 + pandoc [get it here](http://johnmacfarlane.net/pandoc/)
 
----
+***=right
 
-## Resources for knitr
+## knitr resources
 
 + How do I use knitr? See [here](http://yihui.name/knitr/)
 + Can I just see some minimal examples? See [here](http://yihui.name/knitr/demo/minimal/)
-+ But I want to see a video? See [here](http://yihui.name/knitr/)
++ But I want to see a video. See [here](http://yihui.name/knitr/)
+
+## git resources
+
++ How do I use git? See [here](http://git-scm.com/book)
++ But, I want to watch videos! Okay, see [here](https://www.youtube.com/channel/UCP7RrmoueENv9TZts3HXXtw) 
+
+---
+
+## Cred
+
++ Slides made with [Slidify](http://slidify.org/), written in Markdown!
++ Icons by [FontAwesome](http://fortawesome.github.io/Font-Awesome)
 
 ---
 

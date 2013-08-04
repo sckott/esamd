@@ -1,3 +1,0 @@
-Reproducible Research and Collaboration (aka, markdown and a bit of git)
-=========
-
