@@ -51,7 +51,7 @@ from [the Markdown site](http://daringfireball.net/projects/markdown/)
 | Super simple to learn - The syntax is dead simple      | Simple, okay, i'll give you that |
 | Widely supported on the web (StackOverflow, GitHub, pandoc, static webpages, etc..)      | Not supported on the web      |
 | Versioning? Can at least partly due as it's plain text | Can't version binary files  |
-| Open in your favorite editor? heck yes | Sorry, only Word and OpenOffice |
+| Open in your favorite editor? heck yes | Sorry, only Word and OpenOffice (sorta works) |
 | Execute code inside the document? Yep! |  Sorry, what does that mean? |
 | easy | okay, also easy |
 | free | h*%ll no |
@@ -189,6 +189,18 @@ Content Cell  | Content Cell
           <td>9</td>
       </tr>
   </table>
+
+---
+
+## [knitr](http://yihui.name/knitr/) 
+
+![](assets/img/yihui.png)
+
+<center><strong>Elegant, flexible and fast dynamic report generation with R</strong></center>
+
+<center>
+<i class="icon-code icon-4x"> +</i> <i class="icon-pencil icon-4x"> =</i> <i class="icon-smile icon-4x"></i>
+</center>
 
 ---
 
@@ -335,12 +347,8 @@ pandoc -o knitr_eg.tex knitr_eg.md
 ```
 
 ---
-
-<!-- 
-
-Karthik - Do the live demo of working with git here?
-
--->
+<br><br><br>
+## Karthik
 
 --- &twocol
 

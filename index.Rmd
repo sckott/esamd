@@ -192,6 +192,18 @@ Content Cell  | Content Cell
 
 ---
 
+## [knitr](http://yihui.name/knitr/) 
+
+![](assets/img/yihui.png)
+
+<center><strong>Elegant, flexible and fast dynamic report generation with R</strong></center>
+
+<center>
+<i class="icon-code icon-4x"> +</i> <i class="icon-pencil icon-4x"> =</i> <i class="icon-smile icon-4x"></i>
+</center>
+
+---
+
 ## knitr - R code blocks in Markdown
 
 Put executable code blocks in your markdown
@@ -323,12 +335,8 @@ pandoc -o knitr_eg.tex knitr_eg.md
 ```
 
 ---
-
-<!-- 
-
-Karthik - Do the live demo of working with git here?
-
--->
+<br><br><br>
+## Karthik
 
 --- &twocol
 
