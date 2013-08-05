@@ -280,9 +280,9 @@ Here's a [full list of options](http://yihui.name/knitr/options)
 
 <br><br><br><br>
 
-1. Take your previous example and add some code chunk options.
-
-2. Compile document using knitr.
+### Take your previous example and add some code chunk options.
+<br><br>
+### Compile document using knitr.
 
 
 --- 
