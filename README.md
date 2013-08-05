@@ -31,9 +31,13 @@ Workshop description from the [ESA website](http://eco.confex.com/eco/2013/webpr
 **What to do/bring before the workshop**
 
 + Bring your own laptop
++ Install a Markdown reader (some options for free/cheap apps - just some ideas - look around for yourself)
+	+ Mac: [Mou](http://mouapp.com/) (free), [Marked](http://markedapp.com/) ($4), 
+	+ windows: [MarkdownPad](http://markdownpad.com/) (free)
+	+ Linux: [UberWriter](http://uberwriter.wolfvollprecht.de/)
 + Install [RStudio](http://www.rstudio.com/ide/download/desktop)
 + Install the following libraries in your R installation:
-  + [knitr](http://yihui.name/knitr/)
+  + [knitr](http://yihui.name/knitr/) and any dependencies
 
   
 
@@ -63,7 +67,7 @@ Compile the file to slides:
 + install R packge slidifyLibraries: `install_github("slidifyLibraries", "ramnathv", ref="dev")`
 + Then load the two packages `library(slidify); library(slidifyLibraries)`
 + Go to the directory on your machine where this is
-+ run slidify("index.Rmd"), and it will output a file "index.html" that you can open in browser and examine
++ run `slidify("index.Rmd")`, and it will output a file *index.html* that you can open in browser and examine
 + edit stuff, commit changes, push
 
 notes:
